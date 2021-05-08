@@ -12,5 +12,9 @@ namespace recup.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<recup.Models.Currency> Currencies { get; set; }
+
+        public System.Data.Entity.DbSet<recup.Models.Country> Countries { get; set; }
     }
 }
