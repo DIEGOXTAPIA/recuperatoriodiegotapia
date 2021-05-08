@@ -16,6 +16,9 @@ namespace recup.Models
         public int Population { get; set; }
         public List<string> Timezones{ get; set; }
         public List<Currency> Currencies { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="{0-yyy-MM-dd}",ApplyFormatInEditMode =true)]
+        public DateTime Birthday { get; set; }
 
     }
 }
